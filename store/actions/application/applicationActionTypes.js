@@ -1,0 +1,6 @@
+export const applicationActionTypes = {
+    SET_MAP_DATA: 'SET_MAP_DATA',
+    SET_FORM_DATA: 'SET_FORM_DATA',
+    RESET_FORM_DATA: 'RESET_FORM_DATA',
+    SET_FORM_FIELD_DATA: 'SET_FORM_FIELD_DATA',
+}

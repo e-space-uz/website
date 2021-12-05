@@ -1,0 +1,51 @@
+.accardion {
+    width: 100%;
+}
+.item {
+    background: #f7f7f7;
+    margin-bottom: 16px;
+    padding: 24px 20px;
+    border-radius: 8px;
+    .accordion_btn {
+        width: 100%;
+        position: relative;
+        text-align: left;
+        border: none;
+        border-radius: 6px;
+        background: #f7f7f7;
+        outline: none;
+        cursor: pointer;
+    }
+    .accordion_txt {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 500;
+        margin: 0;
+        color: #000;
+    }
+    .desc {
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+        & > div {
+            & > h6 {
+                margin: 0;
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #252c32;
+            }
+            & > a {
+                margin: 0;
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 400;
+                color: #84919a;
+                cursor: pointer;
+                &:hover {
+                    color: #84919a;
+                }
+            }
+        }
+    }
+}

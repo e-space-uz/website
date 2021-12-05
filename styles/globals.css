@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;800;900&display=swap');
+@import url('./mapbox.css');
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+    --main: #0e73f6;
+    --grey: #d7d7d7;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #f3f5f6;
+}
+.main_container {
+    min-height: 100vh;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+.wrapper {
+    max-width: 1232px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+li {
+    list-style: none;
+}
+.MuiPagination-ul {
+    justify-content: center;
+}
+@media (max-width: 600px) {
+    div.example {
+        font-size: 30px;
+    }
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    color: inherit;
+}
+button {
+    outline: 0;
+    cursor: pointer;
+}
+#nprogress {
+    pointer-events: none;
+}
+#nprogress .bar {
+    background: #0e73f6;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+}
+
+#nprogress .peg {
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    height: 100%;
+    box-shadow: 0 1px 20px #0e73f6, 0 0 5px #0e73f6;
+    opacity: 1;
+    -webkit-transform: rotate(3deg) translate(0px, -4px);
+    -ms-transform: rotate(3deg) translate(0px, -4px);
+    transform: rotate(3deg) translate(0px, -4px);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type='number'] {
+    -moz-appearance: textfield; /* Firefox */
+}
+.accordion_content {
+    background: #f7f7f7;
+    max-height: 0;
+    /* transition: 0.1s; */
+    overflow: hidden;
+    margin: 0;
+}
+.accordion_content.show {
+    background: #f7f7f7;
+    margin: 0;
+    padding-top: 16px;
+    height: auto;
+    max-height: 9999px;
+    transition: 0.1s;
+}

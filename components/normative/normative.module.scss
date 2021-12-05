@@ -1,0 +1,41 @@
+.normative_box {
+    border: 2px solid #f7f7f7;
+    border-radius: 8px;
+    margin: 56px 0;
+    .normative_title {
+        background: #f9f9f9;
+        padding: 20px 24px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .normative_cards {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 24px;
+        .normative_card {
+            &_title {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #252c32;
+                margin-bottom: 4px;
+            }
+            &_txt {
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 400;
+                color: #6e7c87;
+                margin-bottom: 8px;
+            }
+            &_link {
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: 400;
+                color: #0e73f6;
+                cursor: pointer;
+            }
+        }
+    }
+}
